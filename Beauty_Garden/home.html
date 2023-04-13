@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.container1{
+    width: 20%;
+    background-color: white;
+    float: left;
+}
+.container2{
+    width: 80%;
+    background-color: white;
+    float: right;
+    max-height: 1000%;
+}
+h1{
+   font-size: 100px;
+    color:crimson;
+    font-style:oblique;
+    text-align:center;
+    border-top: pink;
+}
+img{
+    height: 80%;
+    width: 94%;    
+}
+
+.navbar{
+    color:black;
+    padding: 15px;
+    background-color: crimson;
+    overflow: auto;
+    border-radius: 300px;
+    float: none;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+    padding:10px;
+    font-size: 30px; 
+    cursor: pointer;
+}   
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: crimson;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
+  border: 3px solid violet;
+    padding: 3px;
+  margin: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: crimson;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: darkred;
+}
+
+.aside {
+  background-color: crimson;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: crimson;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+ 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container1">
+      <img src="logo-small.png" alt="Error loading the logo">
+    </div>
+    <div class="container2">
+        <h1>Beauty Garden</h1>
+    </div>
+<nav class="navbar">
+    <ul>
+        <li><a href="HOMEBEAUTI (1).html">Home</a></li>
+        <li>Male Section</li>
+        <li><a href="Female_Section.html">Female Section</a></li>
+        <li>About Us</li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+</nav>
+</header>
+
+  <h2>Enjoy Proffesional Beauty Services from your favourite salon and parlours!</h2>
+
+
+  <div class="row">
+    <div class="col-3 col-s-3 menu">
+        <h3>Select your gender</h3>
+      <ul>
+        <li><a>Male</a></li>
+        <li><a href="Female_Section.html">Female</a></li>
+      </ul>
+    </div>
+
+  <div class="col-6 col-s-9">
+  
+    <h3>"Beauty is what about you feel about yourself and not about what you see in the mirror"</h3>
+    <h4>Great Hair doesnot happen by chance....It happens by booking an appointment</h4>
+    <h4>We show you the path to bring out the beauty in you</h4>
+    <h4>We help you in looking gorgeous in the best days of your life</h4>
+    <h4>So, wait comes to an end book your appointment and enjoy beauty services in your favourite salons and parlours</h4>
+    <h3>THIS IS WHERE THE MAGIC BEGINS...</h3>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>UPDATES..</h2>
+      <h4>
+          <ul>
+              <li>Flat 50% off on a female haircut</li>
+              <li>Flat 20% off on a male haircut</li>
+          </ul>
+        </h4>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>The exclusive booking at home for Salon cum Beauty Parlour in your town with all facilities and proffesionals for stunning looks and absolute luxury!</h2>
+</div>
+
+</body>
+</html>

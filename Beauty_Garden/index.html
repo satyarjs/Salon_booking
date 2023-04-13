@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     h1{
+   font-size: 100px;
+    color:crimson;
+    font-style:oblique;
+    text-align:center;
+    border-top: pink;
+}
+.container1{
+    width: 20%;
+    background-color: white;
+    float: left;
+}
+.container2{
+    width: 80%;
+    background-color: white;
+    float: right;
+    max-height: 1000%;
+}
+img{
+    height: 100%;
+    width: 100%;    
+}
+
+.navbar{
+    color:black;
+    padding: 15px;
+    background-color: crimson;
+    overflow: auto;
+    border-radius: 300px;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+    padding:10px;
+    font-size: 30px; 
+    
+}   
+    </style>
+</head>
+<body>
+    
+    <header>
+            <div class="container1">
+              <img src="logo-small.png" alt="Error loading the logo">
+            </div>
+            <div class="container2">
+                <h1>Beauty Garden</h1>
+            </div>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Male Section</li>
+                <li>Female Section</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Enter the name of your place</h1>
+    <div class="select-style">
+        <select>
+            <option value="bhubaneswar">Bhubaneswar</option>
+            <option value="jajpur">Jajpur Road</option>
+            <option value="cuttack">Cuttack</option>
+            <option value="keonjhar">Keonjhar</option>
+            <option value="rayagada">Rayagada</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="submit" name="submit">
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        p{
+            font-size:50px;
+                  font-variant-position: sub;
+                  color:crimson;
+                  text-align: center;
+                  font-family: "Lucida Sans", sans-serif;
+            }
+       .btn{
+        font-family: "Lucida Sans", sans-serif;
+           margin: 0px 9px;
+           background-color: crimson;
+           color: cornsilk;
+           padding: 4px 14px;
+           border:2px solid crimson;
+           border-radius:10px;
+           font-size: 20px;
+           cursor: pointer;
+           text-align: center;
+
+       }
+       .btn:hover{
+           background-color: cornsilk;
+       }
+       .form-name input{
+        font-family: "Lucida Sans", sans-serif;
+           text-align: center;
+           display: block;
+           width: 300px;
+           padding: 1px;
+           border: 2px solid crimson;
+           margin: 11px auto;
+           font-size: 25px;
+           border-radius: 8px;
+}
+       .form-tell input{
+        font-family: "Lucida Sans", sans-serif;
+           text-align: center;
+           display: block;
+           width: 508px;
+           padding: 25px;
+           border: 2px solid crimson;
+           margin: 11px auto;
+           font-size: 25px;
+           border-radius: 8px;
+ }
+ .container{
+     border: 25px solid crimson;
+     margin: 106px 80px;
+     padding: 75px;
+     width: 75%;
+     border-radius: 700px;
+     text-align: center;
+ }
+ .container button{
+     display: block;
+     width: 25%;
+     margin: 20px auto;
+ }
+    
+     
+    </style>
+    
+</head>
+<body>
+    <p>Feel free to reach us<p>
+        <div class="container">
+            <form action="index.php" method="post">
+                <div class="form-name">
+                    <input type="text" name="Name" id="Name" placeholder="Enter your name">
+                </div>
+                <div class="form-tell">
+                    <input type="text" name="Tell" id="Tell" placeholder="What do you want to tell us">
+                </div>
+            
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+            </form>
+        </div>
+    
+    
+</body>
+</html>

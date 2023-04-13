@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book an appointment and find the best parlour services!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+h2 {
+  width: 70%;
+  border: 5px solid magenta;
+  padding: 20px;
+  margin: 5px;
+  background-color: mediumorchid;
+  border-radius: 20px;
+  text-align: center;
+}
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  resize: vertical;
+}
+input[type = tel] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+input[type = date] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: palevioletred;
+  color: white;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: crimson;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<script type="text/javascript">
+  function add_sub(el)
+  {
+      if (el.checked)
+      {
+          var total = el;
+          total.form.elements['type'].value+=el.value;
+      }
+      else
+      {
+          var re=new RegExp('(.*)'+el.value+'(.*)$');
+          el.form.elements['type'].value=el.form.elements['type'].value.replace(re,'$1$2');
+      }
+  }
+  </script>
+</head>
+<body>
+
+<h2>Let's not wait for the Perfect Look, Book an appointment now!!!</h2>
+
+
+<div class="container">
+  <form name="form1">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">E-mail</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email.."required>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="lname">Phone Number</label>
+        </div>
+        <div class="col-75">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder = "0123456789"required>
+            
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Preffered Date</label>
+        </div>
+        <div class="col-75">
+            <input type="date" id="date" name="preffered date" required>
+            
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="services">Services Available</label>
+      </div>
+      <div class="col-75">
+        <textarea name="type" rows="5" cols="35" onclick="this.focus();this.select();"></textarea><br>
+        <input type="checkbox" name="Makeup"  value="Makeup," onclick="add_sub(this);"><label>Makeup</label><br>
+        <input type="checkbox" name="Threading"  value="Threading," onclick="add_sub(this);"><label>Threading</label><br>
+        <input type="checkbox" name="Haircut"  value="Haircut," onclick="add_sub(this);"><label>Haircut</label><br>
+        <input type="checkbox" name="Bridal Makeup"  value="Bridal Makeup," onclick="add_sub(this);"><label>Bridal makeup</label>
+
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Any type of allegies</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
